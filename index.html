@@ -11,13 +11,17 @@
 * {
     box-sizing: border-box;
 }
+    
+html{
+    scroll-behavior:smooth;
+}
 
 body {
     margin: 0;
     background: #090909;
     color: #e8e8e8;
     font-family: Georgia, "Times New Roman", serif;
-    line-height: 1.8;
+    line-height: 1.95;
 }
 
 
@@ -42,7 +46,6 @@ header {
             #050505
         );
 
-    padding: 30px;
 }
 
 .poster {
@@ -56,6 +59,33 @@ header {
 
     box-shadow:
         0 0 80px rgba(0,0,0,0.95);
+}
+
+nav {
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+
+    background: rgba(10,10,10,.95);
+    backdrop-filter: blur(8px);
+
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+
+    padding: 18px;
+
+    border-bottom: 1px solid #333;
+}
+
+nav a {
+    color: #ddd;
+    text-decoration: none;
+    transition: .25s;
+}
+
+nav a:hover {
+    color: #b88cff;
 }
 
 .top {
@@ -78,6 +108,23 @@ h1 {
     max-width: 850px;
     font-size: 1.25rem;
     color: #cccccc;
+}
+
+.film-info{
+
+    display:inline-block;
+
+    margin:35px auto;
+
+    padding:20px 35px;
+
+    background:#111;
+
+    border:1px solid #333;
+
+    border-radius:8px;
+
+    text-align:left;
 }
 
 .scroll {
@@ -120,7 +167,7 @@ h1 {
 /* Main content */
 
 main {
-    max-width: 950px;
+    max-width: 900px;
     margin: auto;
     padding: 50px 25px;
 }
@@ -150,6 +197,17 @@ figure {
     text-align: center;
 }
 
+figure img{
+
+    transition:.3s;
+}
+
+figure img:hover{
+
+    transform:scale(1.02);
+
+    box-shadow:0 0 35px rgba(0,0,0,.8);
+}
 
 .placeholder {
 
@@ -202,6 +260,12 @@ blockquote {
     margin: 40px auto;
 
     font-size: 1.35rem;
+    
+    font-size:1.45rem;
+
+    text-align:center;
+
+    color:#ddd;
 
 }
 
@@ -323,6 +387,7 @@ footer h3 {
 
 </head>
 
+<link rel="icon" href="Poster.png">
 
 <body>
 
@@ -818,7 +883,30 @@ technique, all through a captivating and thrilling watch.
 
 <footer>
 
-Created as a WOVEN Film Review Project
+<div class="credits">
+
+<h3>Nearly Crazy</h3>
+
+<p>
+Film Review for ENGL 1102 (WOVEN)
+</p>
+
+<p>
+Based on Gertrude Stein's
+<i>Tender Buttons</i> (1914)
+</p>
+
+<p>
+Website & Review by Your Name
+</p>
+
+</div>
+
+<hr>
+
+<p class="copyright">
+© 2026 • Educational use only
+</p>
 
 </footer>
 
