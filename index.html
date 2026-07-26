@@ -154,6 +154,7 @@ h1 {
 
 .subtitle {
     max-width: 850px;
+    margin: 0 auto;
     font-size: 1.25rem;
     color: #cccccc;
     text-align: center;
@@ -221,6 +222,10 @@ main {
     padding: 50px 25px;
 }
 
+main p {
+    margin-bottom: 25px;
+}
+
 
 section {
     margin: 90px 0;
@@ -244,6 +249,7 @@ h2 {
 figure {
     margin: 40px 0;
     text-align: center;
+    scroll-margin-top: 100px;
 }
 
 figure img{
@@ -288,6 +294,16 @@ img {
 
 }
 
+a {
+    color: #b88cff;
+    transition: .2s;
+}
+
+
+a:hover {
+    color: white;
+}
+
 
 figcaption {
 
@@ -303,22 +319,23 @@ figcaption {
 
 blockquote {
 
-    background: #111;
+    background: rgba(112,64,160,0.25);
 
-    border-left:
-        5px solid #7040a0;
+    border-left: none;
 
-    padding: 25px;
+    padding: 35px;
 
-    margin: 40px auto;
+    margin: 50px auto;
 
-    font-size: 1.35rem;
-    
-    font-size:1.45rem;
+    max-width: 800px;
 
-    text-align:center;
+    font-size: 1.25rem;
 
-    color:#ddd;
+    text-align: center;
+
+    border-radius: 8px;
+
+    box-shadow: 0 0 25px rgba(112,64,160,0.15);
 
 }
 
@@ -646,7 +663,7 @@ YOUR EYES DECEIVE YOU
 <h2>The Hunter: Misdirection</h2>
 
 
-<figure>
+<figure id="figure1">
 
 <a href="figure1.png" target="_blank">
     <img src="figure1.png" alt="Man with shotgun in the forest">
@@ -668,7 +685,7 @@ Figure 1: The hunter is introduced as a potential threat.
 With its opening, the film exposes one to its deeply unsettling 
 atmosphere. Before even introducing the protagonist, the audience 
 is shown a man aiming a rifle in the woods; a marking image seen above 
-(<i>Figure 1</i>). This opening scene suggests that this man, the implied 
+(<a href="#figure1">Figure 1</a>). This opening scene suggests that this man, the implied 
 hunter, will become the film's primary antagonist. However, this 
 expectation is quickly subverted as the hunter never appears again. 
 
@@ -731,7 +748,7 @@ exploration of unclarity; expression through suggestion rather than assertion.
 
 
 
-<figure>
+<figure id="figure2">
     
 <a href="figure2.png" target="_blank">
 <img src="figure2.png" alt="Unstable forest perspective">
@@ -785,7 +802,7 @@ audience from settling into a single interpretation.
 
 <div class="image-grid">
 
-<figure>
+<figure id="figure3">
 
 <a href="figure4.png" target="_blank">
 <img src="figure4.png" alt="Woman walking through forest">
@@ -798,7 +815,7 @@ Figure 3: The protagonist moves through the forest in a calm environment.
 </figure>
 
 
-<figure>
+<figure id="figure4">
 
 <a href="figure5.png" target="_blank">
 <img src="figure5.png" alt="Forest canopy and sky">
@@ -811,7 +828,7 @@ Figure 4: Peaceful landscape shots create a false sense of safety.
 </figure>
 
 
-<figure>
+<figure id="figure5">
 
 <a href="figure6.png" target="_blank">
 <img src="figure6.png" alt="First person forest perspective">
@@ -824,7 +841,7 @@ Figure 5: The camera shifts into a frantic first-person perspective.
 </figure>
 
 
-<figure>
+<figure id="figure6">
 
 <a href="figure7.png" target="_blank">
 <img src="figure7.png" alt="Camera movement through forest">
@@ -876,7 +893,7 @@ experiencing the same loss of sanity as the hunter.
 
 
 
-<figure>
+<figure id="figure7">
 
 <a href="figure8.png" target="_blank">
 <img src="figure8.png" alt="Unstable forest perspective">
@@ -943,7 +960,7 @@ The Lamp: Fragmented Reality
 
 
 
-<figure>
+<figure id="figure8">
 
 <a href="figure9.png" target="_blank">
 
