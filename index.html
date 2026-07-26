@@ -24,7 +24,8 @@ body {
 /* Opening title section */
 
 header {
-    height: 100vh;
+    min-height: 100vh;
+    padding: 80px 30px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -45,11 +46,11 @@ header {
 }
 
 .poster {
-    width: 500px;
-    max-width: 85%;
-    margin-bottom: 50px;
+    width: 700px;
+    max-width: 90vw;
+    margin-bottom: 60px;
     border: 1px solid #333;
-    box-shadow: 0 0 50px rgba(0,0,0,0.9);
+    box-shadow: 0 0 80px rgba(0,0,0,0.9);
 }
 
 
@@ -66,7 +67,42 @@ h1 {
     color: #cccccc;
 }
 
+.scroll {
+    margin-top: 50px;
+    color: #888;
+    letter-spacing: 3px;
+    animation: fade 2s infinite;
+}
 
+@keyframes fade {
+    50% {
+        opacity: .3;
+    }
+}
+
+.image-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 25px;
+    margin: 40px 0;
+}
+
+
+.image-grid figure {
+    margin: 0;
+}
+
+
+.image-grid img {
+    width: 100%;
+    height: auto;
+}
+
+
+.image-grid figcaption {
+    font-size: 0.9rem;
+    margin-top: 8px;
+}
 
 /* Main content */
 
@@ -245,7 +281,9 @@ becomes an unsettling cinematic experience of paranoia,
 ambiguity, and unreliable perception.
 
 </p>
-
+<p class="scroll">
+↓ Scroll to read review
+</p>
 </div>
 
 </header>
@@ -418,23 +456,53 @@ and subtle changes between shots reinforce this feeling of uncertainty.
 
 
 
+<div class="image-grid">
+
 <figure>
 
-<img src="figure4.png" alt="Forest scene showing the protagonist">
-
-<img src="figure5.png" alt="Forest and sky perspective">
-
-<img src="figure6.png" alt="First-person camera movement through forest"> 
-    
-<img src="figure7.png" alt="Unstable forest perspective">
+<img src="figure4.png" alt="Woman walking through forest">
 
 <figcaption>
-
-Figure 3-6: Camera movement and forest shot variety.
-
+Figure 4: The protagonist moves through the forest in a calm environment.
 </figcaption>
 
 </figure>
+
+
+<figure>
+
+<img src="figure5.png" alt="Forest canopy and sky">
+
+<figcaption>
+Figure 5: Peaceful landscape shots create a false sense of safety.
+</figcaption>
+
+</figure>
+
+
+<figure>
+
+<img src="figure6.png" alt="First person forest perspective">
+
+<figcaption>
+Figure 6: The camera shifts into a frantic first-person perspective.
+</figcaption>
+
+</figure>
+
+
+<figure>
+
+<img src="figure7.png" alt="Camera movement through forest">
+
+<figcaption>
+Figure 7: Rapid movement destabilizes the viewer's sense of space.
+</figcaption>
+
+</figure>
+
+
+</div>
 
 
 
