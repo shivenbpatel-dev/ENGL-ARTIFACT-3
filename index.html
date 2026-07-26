@@ -76,16 +76,34 @@ nav {
     padding: 18px;
 
     border-bottom: 1px solid #333;
+
+    transition: .3s;
+}
+
+nav:hover {
+
+    box-shadow: 0 3px 20px rgba(0,0,0,.45);
+
 }
 
 nav a {
     color: #ddd;
+    padding: 8px 16px;
+    border-radius: 6px;
     text-decoration: none;
-    transition: .25s;
+    transition: all .2s ease;
 }
 
 nav a:hover {
-    color: #b88cff;
+
+    background: rgba(112,64,160,.25);
+
+    color: #fff;
+
+    text-shadow:
+        2px 0 #b88cff,
+       -2px 0 #40d0ff;
+
 }
 
 .top {
@@ -109,6 +127,20 @@ nav a:hover {
     transition: all .25s ease;
 
     cursor: pointer;
+
+}
+
+.top:hover {
+
+    background: #7040a0;
+
+    border-color: #b88cff;
+
+    color: white;
+
+    transform: translateY(-3px);
+
+    box-shadow: 0 0 18px rgba(184,140,255,.5);
 
 }
 
@@ -215,16 +247,20 @@ figure {
 
 figure img{
 
-    transition:.3s;
+    transition:.3s ease;
+
+    cursor: zoom-in;
 }
 
-figure img:hover{
+figure img:hover {
 
-    transform:scale(1.02);
+    transform: scale(1.02);
 
-    box-shadow:0 0 35px rgba(0,0,0,.8);
+    box-shadow: 0 0 35px rgba(184,140,255,.45);
+
+    border-color: #b88cff;
+
 }
-
 .placeholder {
 
     height: 300px;
@@ -443,11 +479,11 @@ ambiguity, and unreliable perception.
     
 <div class="film-info">
 
-<p><b>Title:</b> &emsp;&emsp;&emsp; Nearly Crazy</p>
+<p><b>Title:</b> &emsp;&emsp;&emsp;&emsp; Nearly Crazy</p>
 
-<p><b>Based on:</b> &emsp; "A White Hunter" by Gertrude Stein</p>
+<p><b>Based on:</b> &emsp;&ensp; "A White Hunter" by Gertrude Stein</p>
 
-<p><b>Genre:</b> &emsp;&emsp;&ensp; Experimental Psychological Film</p>
+<p><b>Genre:</b> &emsp;&emsp;&emsp;; Experimental Psychological Film</p>
 
 <p><b>Review by:</b> &emsp; <t></t>Continental Production</p>
 
@@ -794,7 +830,7 @@ themselves.
 <section id="lamp">
 
 
-<h2 class="lamp">
+<h2>
 
 The Lamp: Fragmented Reality
 
