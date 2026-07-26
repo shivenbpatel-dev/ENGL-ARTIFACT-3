@@ -156,6 +156,7 @@ h1 {
     max-width: 850px;
     font-size: 1.25rem;
     color: #cccccc;
+    text-align: center;
 }
 
 .film-info{
@@ -374,9 +375,7 @@ footer {
 
     background: #050505;
 
-    padding: 80px 30px 40px;
-
-    text-align: center;
+    padding: 60px 8% 30px;
 
     color: #aaa;
 
@@ -454,7 +453,85 @@ footer h4 {
 }
 
 
+.footer-container {
+
+    display: grid;
+
+    grid-template-columns: repeat(3, 1fr);
+
+    gap: 50px;
+
+    max-width: 1200px;
+
+    margin: auto;
+
+}
+
+
+.footer-column h3 {
+
+    color: #e8e8e8;
+
+    letter-spacing: 3px;
+
+    font-size: 1.2rem;
+
+    margin-bottom: 25px;
+
+}
+
+
+.footer-column h4 {
+
+    color: #b88cff;
+
+    letter-spacing: 2px;
+
+    margin-bottom: 15px;
+
+}
+
+
+.footer-column p {
+
+    margin-bottom: 20px;
+
+}
+
+
+.footer-column a {
+
+    display: block;
+
+    color: #aaa;
+
+    text-decoration: none;
+
+    margin-bottom: 15px;
+
+    transition: .25s ease;
+
+}
+
+
+.footer-column a:hover {
+
+    color: #b88cff;
+
+    transform: translateX(5px);
+
+}
+
+
 .copyright {
+
+    text-align: center;
+
+    margin-top: 50px;
+
+    padding-top: 25px;
+
+    border-top: 1px solid #222;
 
     font-size: .9rem;
 
@@ -981,18 +1058,14 @@ technique, all through a captivating and thrilling watch.
 
 <footer>
 
-<div class="credits">
+<div class="footer-container">
 
-<h3>CONTINENTAL PRODUCTION</h3>
 
-<p>
-<i>Nearly Crazy</i><br>
-An Experimental Film Review Experience
-</p>
+<div class="footer-column">
 
-<br>
+<h3>CONTINENTAL<br>PRODUCTION</h3>
 
-<h4>Production Team</h4>
+<h4>Members</h4>
 
 <p>
 <b>Jessica Kim</b><br>
@@ -1013,7 +1086,7 @@ Creative Director of Interpretation
 
 
 
-<div class="links">
+<div class="footer-column">
 
 <h3>Additional Links</h3>
 
@@ -1021,23 +1094,19 @@ Creative Director of Interpretation
 Nearly Crazy Experimental Film
 </a>
 
-<br>
-
 <a href="#">
-Mariana Entertainment — Director's Vision Statement
+Mariana Entertainment's Director's Vision Statement
 </a>
 
-<br>
-
 <a href="#">
-"A White Hunter" — Gertrude Stein
+<i>A White Hunter</i>
 </a>
 
 </div>
 
 
 
-<div class="links">
+<div class="footer-column">
 
 <h3>Related Continental Productions</h3>
 
@@ -1045,19 +1114,13 @@ Mariana Entertainment — Director's Vision Statement
 Disrupt Experimental Film
 </a>
 
-<br>
-
 <a href="#">
 Director's Vision Statement
 </a>
 
-<br>
-
 <a href="#">
 Film Review Teach Back
 </a>
-
-<br>
 
 <a href="#">
 Continental Production's Watch Party of <i>Nearly Crazy</i>
@@ -1066,16 +1129,14 @@ Continental Production's Watch Party of <i>Nearly Crazy</i>
 </div>
 
 
+</div>
+
 
 <div class="copyright">
 
-<p>
-© 2026 Continental Production
-</p>
-
-<p>
-Created for ENGL 1102 — WOVEN Film Review Project
-</p>
+© 2026 Continental Production  
+<br>
+ENGL 1102 — WOVEN Film Review Project
 
 </div>
 
